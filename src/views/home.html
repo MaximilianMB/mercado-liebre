@@ -16,30 +16,40 @@
 
 <body>
     <header>
-        <img class="logo" src="/img/logo-mercado-liebre.svg">
-        <i class="uil uil-search"></i>
-        <input type="text" placeholder="Buscar productos, marcas..." />
-        <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <p class="centrado"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito
-        </p>
-        <ul class="barra-navegacion">
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Tiendas Oficiales</a></li>
-            <li><a href="#">Vender</a></li>
-            <li><a href="#">Ayuda</a></li>
-        </ul>
-        <br />
-        <ul class="barra-login">
-            <li><a href="#">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-            <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-            <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-        </ul>
+        <div class="logo-barra-centrado">
+            <div class="logo-barra">
+                <img class="logo" src="/img/logo-mercado-liebre.svg">
+                <div class="barra-busqueda">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Buscar productos, marcas..." />
+                    <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <p class="centrado"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de
+                crédito
+            </p>
+        </div>
+        <div class="barras">
+            <ul class="barra-navegacion">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <br />
+            <ul class="barra-login">
+                <li><a href="#">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </div>
         <div class="burguer-menu">
             <i class="fas fa-bars"></i>
         </div>
     </header>
     <main>
-        <section>
+        <img src="img/img-home-banner.jpg" alt="banner">
+        <section class="productos-vista">
             <h3 class="titular">Basado en tu última visita</h3>
             <div class="producto">
                 <img src="img/img-cafetera-moulinex.jpg" alt="imagen de cafetera">
@@ -73,7 +83,7 @@
                         <p class="precio">$70.500</p>
                         <p class="descuento">10% OFF</p>
                     </div>
-                    <p class="descripcion"></p><b>Samsung Galaxy S10</b></p>
+                    <p class="descripcion"><b>Samsung Galaxy S10</b></p>
                     <br />
                 </div>
             </div>
@@ -91,7 +101,7 @@
         </section>
         <br />
         </div>
-        <section>
+        <section class="productos-ofertas">
             <h3 class="titular">Ofertas</h3>
             <div class="producto">
                 <img src="img/img-cafetera-moulinex.jpg" alt="imagen de cafetera">
@@ -125,7 +135,7 @@
                         <p class="precio">$70.500</p>
                         <p class="descuento">10% OFF</p>
                     </div>
-                    <p class="descripcion"></p><b>Samsung Galaxy S10</b></p>
+                    <p class="descripcion"><b>Samsung Galaxy S10</b></p>
                     <br />
                 </div>
             </div>

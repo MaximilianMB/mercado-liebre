@@ -84,10 +84,12 @@ main {
     margin-bottom: 10px;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: white;
 }
 
 .producto1 {
-    border: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
     background-color: white;
     padding: 15px;
     position: relative;
@@ -100,8 +102,9 @@ main {
 }
 
 .logo {
-    width: 50%;
+    width: 30%;
     display: block;
+    margin-left: 5%;
 }
 
 .barra-navegacion {
@@ -133,13 +136,27 @@ main {
     margin: 0
 }
 
+.barra-busqueda {
+    height: 80%;
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-barra {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 @media (min-width: 480px) {
 
-    /*=== Tablets y visto horizontal en celulares===*/
+    /*=== Tablets y vista horizontal en celulares===*/
 
     .descripcion {
         display: block;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .barra-navegacion {
@@ -157,14 +174,81 @@ main {
     .precio {
         padding-right: 1%;
     }
+
+    .producto {
+        width: 40%;
+    }
+
+    .titular {
+        width: 100%;
+    }
+
+    .productos-vista {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .productos-ofertas {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .logo-barra-centrado {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo {
+        width: 45%;
+    }
+
+    .barra-busqueda {
+        height: 35%;
+    }
+
+    .barras {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    ul.barra-navegacion {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 40%;
+        padding-left: 3%;
+        text-decoration: none;
+        align-items: flex-end;
+    }
+
+    ul.barra-login {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 45%;
+        align-items: flex-end;
+    }
+
+    a {
+        text-decoration: none;
+        color: black
+    }
+
+    .titular {
+        margin-left: 5%;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
     /*=== Laptops, vista horizontal de tablets y computadoras de escritorio pequeñas===*/
     .descripcion {
         display: block;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .barra-navegacion {
@@ -181,5 +265,72 @@ main {
 
     .precio {
         padding-right: 1%;
+    }
+
+    .producto {
+        width: 20%;
+    }
+
+    .titular {
+        width: 100%;
+    }
+
+    .productos-vista {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .productos-ofertas {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .logo-barra-centrado {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo {
+        width: 45%;
+    }
+
+    .barra-busqueda {
+        height: 35%;
+    }
+
+    .barras {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    ul.barra-navegacion {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 35%;
+        padding-left: 3%;
+        text-decoration: none;
+    }
+
+    ul.barra-login {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 40%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black
+    }
+
+    .titular {
+        margin-left: 3%;
     }
 }
