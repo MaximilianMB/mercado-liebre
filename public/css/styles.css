@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    margin: 0%;
+    padding: 2%;
+    background-color: #EAC926;
+    box-sizing: border-box;
+}
+
+.centrado {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 100%;
+    margin: 0%
+}
+
+.titular {
+    font-size: 24px;
+    margin-left: 2.5%;
+    color: #666;
+}
+
+.precio {
+    font-size: 18px;
+    display: flex;
+    padding-right: 2%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    display: flex;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #666;
+    display: none;
+}
+
+section.foot {
+    border-image-width: 10%;
+}
+
+.burguer-menu {
+    width: 5%;
+    background-color: #1259c3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10%;
+    height: 18px;
+    align-items: center;
+    padding: 1%;
+}
+
+.foot {
+    text-align: center;
+    padding: 10%
+}
+
+img {
+    width: 100%;
+    padding: 1px
+}
+
+main {
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producto {
+    margin-bottom: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.producto1 {
+    border: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.icono {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.logo {
+    width: 50%;
+    display: block;
+}
+
+.barra-navegacion {
+    display: none
+}
+
+.barra-login {
+    display: none
+}
+
+.precio-descuento {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icono-envio {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0
+}
+
+@media (min-width: 480px) {
+
+    /*=== Tablets y visto horizontal en celulares===*/
+
+    .descripcion {
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .barra-navegacion {
+        display: block
+    }
+
+    .barra-login {
+        display: block
+    }
+
+    .burguer-menu {
+        display: none
+    }
+
+    .precio {
+        padding-right: 1%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /*=== Laptops, vista horizontal de tablets y computadoras de escritorio pequeñas===*/
+    .descripcion {
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .barra-navegacion {
+        display: block
+    }
+
+    .barra-login {
+        display: block
+    }
+
+    .burguer-menu {
+        display: none
+    }
+
+    .precio {
+        padding-right: 1%;
+    }
+}
