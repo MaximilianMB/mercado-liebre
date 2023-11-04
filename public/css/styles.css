@@ -136,19 +136,26 @@ main {
     margin: 0
 }
 
-.barra-busqueda {
-    height: 80%;
-    width: 40%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: flex-start;
+.barra-busqueda1{
+    width: 100%;
+    border: none;
+    margin: 0%;
+    padding: 1%;
+    border-radius: 5px;
+}
+.boton-busqueda{
+    border: none;
+    position: absolute;
+    right: 6%;
+    bottom: 20%;
 }
 
 .logo-barra {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
 }
 
 @media (min-width: 480px) {
@@ -202,12 +209,26 @@ main {
         align-items: center;
     }
 
-    .logo {
-        width: 45%;
+    .barra-busqueda{
+        width: 65%;
     }
-
-    .barra-busqueda {
-        height: 35%;
+    .barra-busqueda1{
+        width: 100%;
+        border: none;
+        margin-left: 3%;
+        padding: 1%;
+        border-radius: 5px;
+    }
+    .boton-busqueda{
+        position: absolute;
+        right: 1%;
+        top:30%;
+        border: none;
+    }
+    .logo{
+        width: 25%;
+        padding: 0;
+        margin: 0;
     }
 
     .barras {
@@ -290,17 +311,43 @@ main {
 
     .logo-barra-centrado {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
+        width: 100%;
     }
-
-    .logo {
-        width: 45%;
+    .centrado{
+        display: flex;
+        justify-content: center;
+        width: 30%;
     }
-
-    .barra-busqueda {
-        height: 35%;
+    .barra-busqueda{
+        width: 65%;
+    }
+    .barra-busqueda1{
+        width: 100%;
+        border: none;
+        margin-left: 3%;
+        padding: 1%;
+        border-radius: 5px;
+    }
+    .boton-busqueda{
+        position: absolute;
+        right: 1%;
+        top:35%;
+        border: none;
+    }
+    .logo{
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+    .logo-barra{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
     .barras {
