@@ -40,9 +40,8 @@ body {
 }
 
 .descripcion {
+    color:#666;
     font-size: 16px;
-    color: #666;
-    display: none;
 }
 
 section.foot {
@@ -84,8 +83,8 @@ main {
     margin-bottom: 10px;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .producto1 {
@@ -99,6 +98,7 @@ main {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+    transition: all;
 }
 
 .logo {
@@ -133,7 +133,7 @@ main {
     top: -15px;
     padding: 5px;
     box-sizing: border-box;
-    margin: 0
+    margin: 0;
 }
 
 .barra-busqueda1{
@@ -268,9 +268,6 @@ main {
 @media (min-width: 769px) {
 
     /*=== Laptops, vista horizontal de tablets y computadoras de escritorio pequeñas===*/
-    .descripcion {
-        display: block;
-    }
 
     .barra-navegacion {
         display: block
@@ -290,6 +287,15 @@ main {
 
     .producto {
         width: 20%;
+        margin-bottom: 10px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        background-color: white;
+        box-shadow: none;
+        transition: all ;
+        }
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); ;
     }
 
     .titular {
@@ -379,5 +385,30 @@ main {
 
     .titular {
         margin-left: 3%;
+    }
+
+    .foot{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icono:hover{
+        color:aquamarine
+    }
+
+    .descripcion {
+        color: white;
+        transition: all 2s;
+        font-size: 16px;
+    }
+    
+    .descripcion:hover{
+        color:#666
+    }
+    .icono-envio {
+        transition: all 2s;
+    }
+    .icono-envio:hover{
+        transform: rotate(-90deg)
     }
 }
