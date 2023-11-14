@@ -4,8 +4,10 @@ const path = require("path");
 
 app.use(express.static(path.join(__dirname, "../public")))
 
-app.listen(3000, function(){
-    console.log("El servidor está corriendo en el puerto 3000")
+const port = process.env.PORT||3000
+
+app.listen(port, function(){
+    console.log(`El servidor está corriendo en el puerto ${port}`)
 })
 
 app.get("/", function(req, res){
