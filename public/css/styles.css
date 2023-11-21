@@ -340,7 +340,7 @@ main {
     .boton-busqueda{
         position: absolute;
         right: 1%;
-        top:35%;
+        top:40%;
         border: none;
     }
     .logo{
@@ -406,7 +406,7 @@ main {
         color:#666
     }
     .icono-envio {
-        transition: all 2s;
+        transition: all 1s;
     }
     .icono-envio:hover{
         transform: rotate(-90deg)
